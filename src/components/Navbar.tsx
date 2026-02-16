@@ -7,7 +7,7 @@ function Navbar() {
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
-  const scrollTo = (id) => {
+  const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
     });
