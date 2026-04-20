@@ -33,11 +33,11 @@ const SkillBar = ({ skill, level, delay }) => {
 }
 
 const coreSkills = [
-  { skill: 'JavaScript / React', level: 75 },
+  { skill: 'JavaScript / React', level: 65 },
   { skill: 'HTML & CSS', level: 85 },
-  { skill: 'Python', level: 70 },
-  { skill: 'MongoDB', level: 65 },
-  { skill: 'Node.js / Express', level: 60 },
+  { skill: 'Python', level: 32 },
+  { skill: 'MongoDB', level: 85 },
+  { skill: 'Node.js / Express', level: 40 },
 ]
 
 const About = () => {

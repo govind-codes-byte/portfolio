@@ -25,10 +25,10 @@ const skillCategories = [
     category: 'Backend',
     color: '#7C3AED',
     skills: [
-      { name: 'Python', icon: SiPython, color: '#3776AB', level: 72 },
-      { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 60 },
+      { name: 'Python', icon: SiPython, color: '#3776AB', level: 32 },
+      { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 40 },
       { name: 'Express.js', icon: SiExpress, color: '#ffffff', level: 58 },
-      { name: 'MongoDB', icon: SiMongodb, color: '#47A248', level: 65 },
+      { name: 'MongoDB', icon: SiMongodb, color: '#47A248', level: 85 },
     ]
   },
   {

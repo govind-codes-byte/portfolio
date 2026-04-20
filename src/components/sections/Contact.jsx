@@ -12,9 +12,9 @@ const { SiGithub, SiTwitter } = SiIcons
 
 // EmailJS config
 const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID',
-  TEMPLATE_ID: 'YOUR_TEMPLATE_ID',
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY',
+  SERVICE_ID: 'service_f5iejx6',
+  TEMPLATE_ID: 'template_30d57mn',
+  PUBLIC_KEY: 'WFZsSRQwJkLlS1is2',
 }
 
 const socials = [
