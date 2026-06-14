@@ -45,7 +45,7 @@ const Loader = () => {
             Initializing
           </motion.p>
           <motion.div className="flex gap-1.5 justify-center">
-            {['D', 'E', 'V', '.', 'P', 'O', 'R', 'T', 'F', 'O', 'L', 'I', 'O'].map((char, i) => (
+            {['G', 'O', 'V','I','N','D','.', 'P', 'O', 'R', 'T', 'F', 'O', 'L', 'I', 'O'].map((char, i) => (
               <motion.span
                 key={i}
                 className="font-display font-bold text-lg text-white/90"
