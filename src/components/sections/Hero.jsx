@@ -1,7 +1,7 @@
-import { useState, useEffect, Suspense } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HiArrowDown, HiDownload } from 'react-icons/hi'
-import HeroCanvas from '../3d/HeroCanvas'
+
 
 // Typing effect hook
 const useTypingEffect = (words, speed = 100, pause = 2000) => {
@@ -146,7 +146,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.45 }}
             >
-              BCA student passionate about building modern full-stack web applications.
+              Full Stack Developer | BCA Graduate passionate about building modern full-stack web applications.
               I love turning ideas into reality with clean code and beautiful interfaces.
             </motion.p>
 
@@ -213,33 +213,94 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Right: 3D Canvas */}
+          {/* Right: Profile Image */}
           <motion.div
-            className="relative h-[400px] md:h-[550px] lg:h-screen order-1 lg:order-2"
+            className="relative flex items-center justify-center h-[450px] md:h-[600px] lg:h-screen order-1 lg:order-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
+            transition={{
+              duration: 1.2,
+              delay: 0.3,
+              ease: "easeOut",
+            }}
           >
-            <Suspense fallback={
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="w-16 h-16 border-2 border-primary border-t-transparent rounded-full animate-spin" />
-              </div>
-            }>
-              <HeroCanvas />
-            </Suspense>
+            {/* Background Glow */}
+            <div className="absolute w-80 h-80 md:w-[420px] md:h-[420px] rounded-full bg-primary/20 blur-[90px]" />
 
-            {/* Tech badge floating */}
+            {/* Decorative Rings */}
             <motion.div
-              className="absolute bottom-8 left-0 lg:-left-8 glass-card px-4 py-3 rounded-2xl border border-white/10"
-              animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+              className="absolute w-72 h-72 md:w-[400px] md:h-[400px] rounded-full border border-primary/20"
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 30,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            />
+
+            <motion.div
+              className="absolute w-80 h-80 md:w-[450px] md:h-[450px] rounded-full border border-white/10"
+              animate={{ rotate: -360 }}
+              transition={{
+                duration: 40,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            />
+
+            {/* Profile Card */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.3 }}
+              className="relative z-10"
+            >
+              <div className="relative overflow-hidden rounded-full border-4 border-primary shadow-[0_0_60px_rgba(0,255,178,0.35)] bg-dark-card">
+
+                <img
+                  src="/image/govind.png"
+                  className="w-72 h-72 md:w-96 md:h-96 object-cover"
+                />
+
+              </div>
+            </motion.div>
+
+            {/* Floating Badge */}
+            <motion.div
+              className="absolute bottom-10 left-0 lg:left-10 glass-card px-5 py-3 rounded-2xl border border-white/10"
+              animate={{
+                y: [0, -10, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             >
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="font-mono text-xs text-white/70">Available for work</span>
+                <span className="font-mono text-xs text-white/70">
+                  Available for Work
+                </span>
               </div>
             </motion.div>
+
+            {/* Experience Badge */}
+            <motion.div
+              className="absolute top-24 right-2 glass-card px-5 py-3 rounded-2xl border border-white/10"
+              animate={{
+                y: [0, 10, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <p className="text-primary font-bold text-xl">10+</p>
+              <p className="text-white/60 text-xs">Projects</p>
+            </motion.div>
           </motion.div>
+
         </div>
       </div>
 

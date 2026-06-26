@@ -58,7 +58,7 @@ function App() {
             <Navbar darkMode={darkMode} />
 
             {/* Theme Toggle */}
-            <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+            {/* <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} /> */}
 
             {/* Sections */}
             <main>
