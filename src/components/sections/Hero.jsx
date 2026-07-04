@@ -257,7 +257,7 @@ const Hero = () => {
               <div className="relative overflow-hidden rounded-full border-4 border-primary shadow-[0_0_60px_rgba(0,255,178,0.35)] bg-dark-card">
 
                 <img
-                  src="/image/govind.png"
+                  src="/image/govind.jpeg"
                   className="w-72 h-72 md:w-96 md:h-96 object-cover"
                 />
 
