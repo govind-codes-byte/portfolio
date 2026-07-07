@@ -26,9 +26,8 @@ const socials = [
 // Notification
 const Notification = ({ type, message }) => (
   <motion.div
-    className={`fixed bottom-10 right-10 px-4 py-3 rounded-lg ${
-      type === 'success' ? 'bg-green-600' : 'bg-red-600'
-    } text-white`}
+    className={`fixed bottom-10 right-10 px-4 py-3 rounded-lg ${type === 'success' ? 'bg-green-600' : 'bg-red-600'
+      } text-white`}
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0 }}
@@ -76,11 +75,14 @@ const Contact = () => {
 
   return (
     <>
-      <section className="p-10 bg-black text-white">
+      <section
+        id="contact"
+        className="p-10 bg-black text-white"
+      >
         <h2 className="text-3xl mb-6">Contact Me</h2>
 
         <div className="grid md:grid-cols-2 gap-10">
-          
+
           {/* Left Side */}
           <div>
             <p className="mb-4 flex items-center gap-2">

@@ -44,11 +44,10 @@ const Navbar = () => {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? 'glass-card border-b border-white/5 py-3'
-            : 'bg-transparent py-5'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 py-4 transition-colors duration-300 ${scrolled
+            ? 'bg-black/70 backdrop-blur-md'
+            : 'bg-transparent'
+          }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -83,9 +82,8 @@ const Navbar = () => {
                   className="relative font-body text-sm tracking-wide group"
                   data-hover
                 >
-                  <span className={`transition-colors duration-300 ${
-                    isActive ? 'text-primary' : 'text-white/60 hover:text-white'
-                  }`}>
+                  <span className={`transition-colors duration-300 ${isActive ? 'text-primary' : 'text-white/60 hover:text-white'
+                    }`}>
                     {link.label}
                   </span>
                   {/* Active underline */}
@@ -143,9 +141,8 @@ const Navbar = () => {
                   <motion.button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`text-left font-display text-2xl font-semibold ${
-                      activeSection === link.href.replace('#', '') ? 'text-primary' : 'text-white/70'
-                    }`}
+                    className={`text-left font-display text-2xl font-semibold ${activeSection === link.href.replace('#', '') ? 'text-primary' : 'text-white/70'
+                      }`}
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: i * 0.07 }}
