@@ -36,7 +36,7 @@ function App() {
   return (
     <div className={`relative ${darkMode ? 'dark' : ''} noise-overlay`}>
       {/* Custom cursor - hidden on touch devices */}
-      <CustomCursor />
+      {/* <CustomCursor /> */}
 
       {/* Scroll progress bar */}
       <ScrollProgress />

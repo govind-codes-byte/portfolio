@@ -18,7 +18,7 @@
     color: #E8E8E8;
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
-    cursor: none;
+    cursor: auto;
   }
 
   /* Custom scrollbar */
