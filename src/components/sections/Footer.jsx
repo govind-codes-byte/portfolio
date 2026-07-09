@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="font-bold text-2xl">
               <span className="text-white">Govind</span>
               <span className="text-primary">.</span>
-              <span className="text-white/30 text-base">portfolio</span>
+              <span className="text-white/30 text-base">dev</span>
             </div>
 
             <p className="text-white/40 text-sm max-w-xs">

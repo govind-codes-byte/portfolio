@@ -62,7 +62,7 @@ const Navbar = () => {
           >
             <span className="text-white">Govind</span>
             <span className="text-primary">.</span>
-            <span className="text-white/40 text-sm font-mono font-normal ml-1">portfolio</span>
+            <span className="text-white/40 text-sm font-mono font-normal ml-1">dev</span>
             <motion.div
               className="absolute -bottom-1 left-0 h-px bg-primary"
               initial={{ scaleX: 0 }}
